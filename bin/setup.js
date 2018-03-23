@@ -1,5 +1,4 @@
 const spaceImport = require('contentful-import')
-const exportFile = require('../contentful/export.json')
 const inquirer = require('inquirer')
 const chalk = require('chalk')
 const path = require('path')
@@ -61,7 +60,6 @@ inquirer
       JSON.stringify(
         {
           development: {
-            host: 'preview.contentful.com',
             spaceId,
             accessToken: previewToken,
           },
@@ -77,15 +75,5 @@ inquirer
     console.log(`Config file ${chalk.yellow(configFilePath)} written`)
 
     return { spaceId, managementToken }
-  })
-  .then(({ spaceId, managementToken }) =>
-    spaceImport({ spaceId, managementToken, content: exportFile })
-  )
-  .then((_, error) => {
-    console.log(
-      `All set! You can now run ${chalk.yellow(
-        'npm run dev'
-      )} to see it in action.`
-    )
   })
   .catch(error => console.error(error))

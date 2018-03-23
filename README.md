@@ -1,16 +1,12 @@
-# gatsby-contentful-starter
+# Tutorial gatsby and Contentful
 
-Gatsby [Contentful](https://www.contentful.com) starter for creating a blog
+Gatsby [Contentful](https://www.contentful.com) starter for creating a blog. This tutorial was based on an other project by [@Khaledgarbaya](https://github.com/contentful-userland/gatsby-contentful-starter)
 
-![The index page of the starter blog](https://rawgit.com/contentful-userland/gatsby-contentful-starter/master/screenshot.jpg "The index page of the starter blog")
+![The index page of the starter blog](https://github.com/JohannesSanders/tutorial-gatsby-contentful/raw/master/screenshot.jpg "The index page of the starter blog")
 
 Static sites are scalable, secure and have very little required maintenance. They come with a drawback though. Not everybody feels good editing files, building a project and uploading it somewhere. This is where Contentful comes into play.
 
 With Contentful and Gatsby you can connect your favorite static site generator with an API that provides an easy to use interface for people writing content and automate the publishing using services like [Travis CI](https://travis-ci.org/) or [Netlify](https://www.netlify.com/).
-
-## Contribution
-
-This project is part of [contentful-userland](https://github.com/contentful-userland) which means that we’re always open to contributions and pull requests. You can learn more about how contentful userland is organized by visiting [our about repository](https://github.com/contentful-userland/about).
 
 ## Requirements
 
@@ -21,21 +17,16 @@ To use this project you have to have a Contentful account. If you don't have one
 ### Get the source code and install dependencies.
 
 ```
-$ git clone git@github.com:contentful-userland/gatsby-contentful-starter.git
+$ git clone git@github.com:JohannesSanders/tutorial-gatsby-contentful.git
+$ cd gatsby-contentful-starter/
 $ npm i
-```
-
-Or use the [Gatsby CLI](https://www.npmjs.com/package/gatsby-cli).
-
-```
-$ gatsby new contentful-starter https://github.com/contentful-userland/gatsby-contentful-starter
 ```
 
 ### Set up of the needed content model and create a configuration file
 
 This project comes with a Contentful setup command `npm run setup`.
 
-![Command line dialog of the npm run setup command](https://rawgit.com/contentful-userland/gatsby-contentful-starter/master/setup.jpg "Command line dialog of the npm run setup command")
+![Command line dialog of the npm run setup command](https://github.com/JohannesSanders/tutorial-gatsby-contentful/raw/master/setup.jpg "Command line dialog of the npm run setup command")
 
 This command will ask you for a space ID, and access tokens for the Contentful Management, Preview and Delivery API and then import the needed content model into the space you define and write a config file (`./contentful.json`).
 
@@ -56,14 +47,3 @@ Run a production build into `./public`. The result is ready to be put on any sta
 ### `npm run publish`
 
 Run a production build into `./public` and publish the site to GitHub pages.
-
-## Roadmap
-
-- [ ] [make the starter completely responsive](https://github.com/contentful-userland/gatsby-contentful-starter/issues/2)
-- [ ] [include tags](https://github.com/contentful-userland/gatsby-contentful-starter/issues/3)
-- [ ] [support traced placeholders](https://github.com/contentful-userland/gatsby-contentful-starter/issues/4)
-- [ ] [add i18n](https://github.com/contentful-userland/gatsby-contentful-starter/issues/6)
-
-## Other resources
-
-- Tutorial video series ["Building a blazing fast website with GatsbyJS and Contentful"](https://www.youtube.com/watch?v=Ek4o40w1tH4&list=PL8KiuH6vpACV-F7jXribe4YveGBhBeG9A) by @Khaledgarbaya
