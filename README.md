@@ -1,6 +1,6 @@
 # Tutorial gatsby and Contentful
 
-Gatsby [Contentful](https://www.contentful.com) starter for creating a blog. This tutorial was based on an other project by [@Khaledgarbaya](https://github.com/contentful-userland/gatsby-contentful-starter)
+Gatsby [Contentful](https://www.contentful.com) starter for creating a blog. This tutorial was based on a project by [@Khaledgarbaya](https://github.com/contentful-userland/gatsby-contentful-starter).
 
 ![The index page of the starter blog](https://github.com/JohannesSanders/tutorial-gatsby-contentful/raw/master/screenshot.jpg "The index page of the starter blog")
 
@@ -10,7 +10,7 @@ With Contentful and Gatsby you can connect your favorite static site generator w
 
 ## Requirements
 
-To use this project you have to have a Contentful account. If you don't have one yet you can register at [www.contentful.com/sign-up](https://www.contentful.com/sign-up/).
+To use this project you have to have a Contentful account. If you don't have one yet you can register at [Contentful](https://www.contentful.com/sign-up/). You can use the example project called "Blog".
 
 ## Getting started
 
@@ -44,6 +44,6 @@ Run in the project locally using the [Contentful Preview API](https://www.conten
 
 Run a production build into `./public`. The result is ready to be put on any static hosting you prefer.
 
-### `npm run publish`
+### `npm run serve`
 
-Run a production build into `./public` and publish the site to GitHub pages.
+This wil serve the static assets that are located in `./public`.
