@@ -19,7 +19,7 @@ class BlogPostTemplate extends React.Component {
               alt=""
             />
           </div>}
-          <h1 className="section-headline">{siteTitle}</h1>
+          <h1 className="section-headline">{post.title.title}</h1>
           <p
             style={{
               display: 'block',
