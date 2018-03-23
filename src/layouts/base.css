@@ -40,7 +40,6 @@ a {
  * article grid
  */
 .article-list {
-  display: flex;
   justify-content: space-between;
   margin: 0 -1em;
   margin: 0;
@@ -48,8 +47,7 @@ a {
   list-style: none;
 }
   .article-list > li {
-    flex: 1 1 calc(33.333% - 2em);
-    max-width: calc(33.3333% - 2em);
+
   }
 
 /**

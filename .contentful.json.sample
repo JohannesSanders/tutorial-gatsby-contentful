@@ -1,6 +1,5 @@
 {
   "development": {
-    "host": "preview.contentful.com",
     "spaceId": "...",
     "accessToken": "..."
   },

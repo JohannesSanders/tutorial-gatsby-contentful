@@ -7,14 +7,12 @@ import ArticlePreview from '../components/article-preview'
 
 class RootIndex extends React.Component {
   render() {
-    const siteTitle = get(this, 'props.data.site.siteMetadata.title')
-    const posts = get(this, 'props.data.allContentfulBlogPost.edges')
-    const [author] = get(this, 'props.data.allContentfulPerson.edges')
+    const siteTitle = get(this, 'props.data.site.siteMetadata.title.title')
+    const posts = get(this, 'props.data.allContentfulPost.edges')
 
     return (
       <div style={{ background: '#fff' }}>
         <Helmet title={siteTitle} />
-        <Hero person={author} />
         <div className="wrapper">
           <h2 className="section-headline">Recent articles</h2>
           <ul className="article-list">
@@ -36,40 +34,21 @@ export default RootIndex
 
 export const pageQuery = graphql`
   query HomeQuery {
-    allContentfulBlogPost(sort: { fields: [publishDate], order: DESC }) {
+    allContentfulPost {
       edges {
         node {
-          title
+          title {
+            title
+          }
           slug
-          publishDate(formatString: "MMMM Do, YYYY")
           tags
-          heroImage {
+          featuredImage {
             file {
               url
             }
           }
-          description {
-            childMarkdownRemark {
-              html
-            }
-          }
-        }
-      }
-    }
-    allContentfulPerson(filter: { id: { eq: "c15jwOBqpxqSAOy2eOO4S0m" } }) {
-      edges {
-        node {
-          name
-          shortBio {
-            shortBio
-          }
-          title
-          image {
-            file {
-              url
-              fileName
-              contentType
-            }
+          author {
+            name
           }
         }
       }
