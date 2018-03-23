@@ -38,7 +38,7 @@ This project comes with a few handy commands for linting and code fixing. The mo
 
 ### `npm run dev`
 
-Run in the project locally using the [Contentful Preview API](https://www.contentful.com/developers/docs/references/content-preview-api/). This can perfect to preview changes before they go into production.
+Run in the project locally using the [Contentful Preview API](https://www.contentful.com/developers/docs/references/content-preview-api/). This can perfect to preview changes before they go into production. By default the blog will be hosted on [http://localhost:8000](http://localhost:8000) (if this is not the case look at your terminal).
 
 ### `npm run build`
 
@@ -46,4 +46,4 @@ Run a production build into `./public`. The result is ready to be put on any sta
 
 ### `npm run serve`
 
-This wil serve the static assets that are located in `./public`.
+This will serve the static assets that are located in `./public`. By default the blog will be hosted on [http://localhost:9000](http://localhost:9000) (if this is not the case look at your terminal).
